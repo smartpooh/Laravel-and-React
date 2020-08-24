@@ -1,0 +1,24 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+@import "~tailwindcss/base";
+
+@import "~tailwindcss/components";
+
+@import "~tailwindcss/utilities";
+
+.logo g {
+  transform: scale(2.5);
+  fill: #FFFFFF;
+}
+
+.login {
+  transform: scale(.5);
+}
+
+button:hover {
+  color: #4299e1;
+}
