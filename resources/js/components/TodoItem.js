@@ -28,7 +28,7 @@ const TodoItem = (props) => {
                                 <span
                                     className="ml-2 text-sm text-gray-600
 											dark:text-gray-300 capitalize">
-											Niccolo perra
+											Alec Rippberger
 										</span>
                             </div>
 

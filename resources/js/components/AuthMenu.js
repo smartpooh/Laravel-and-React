@@ -7,9 +7,6 @@ const AuthMenu = (props) => {
   const { changeAuthStatusLogin, changeAuthStatusSignup } = appContext;
   return (
     <div className="">
-      <div className="font-inter_extrabold text-4xl text-white text-center">
-        Todo List
-      </div>
       {props.loggedIn ? (<ItemDisplay selectedList={props.selectedList} />) : (
         <div className="flex flex-col md:flex-row items-center md:justify-center w-full font-inter_bold">
           <button

@@ -27,8 +27,7 @@ const ItemDisplay = () => {
 
     return (
         <div className="item-display">
-            <span>{selectedList.name}</span>
-            <pre>{JSON.stringify(listItems, null, 2)}</pre>
+            <h3 class="font-inter_extrabold text-4xl text-white text-center">{selectedList.name}</h3>
             {listItems.map((value, index) => {
                 return <TodoItem key={value.id}
                                  name={value.name}

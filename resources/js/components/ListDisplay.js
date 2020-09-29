@@ -18,8 +18,6 @@ const ListDisplay = () => {
         if(authStatus === LOGGED_IN) {
             apiClient.get('/api/lists')
                 .then(response => {
-                    console.log('response');
-                    console.log(response);
                     setLists(response.data)
                 })
                 .catch(error => console.error(error));
@@ -115,21 +113,6 @@ const ListDisplay = () => {
                     </div>
                 </div>
             </div>
-
-            {/*<pre>{JSON.stringify(lists, null, 2)}</pre>*/}
-
-            {lists.map((value, index) => {
-
-                value.tags = typeof value.tags === 'undefined' ? [] : value.tags;
-
-                return <TodoList key={value.id}
-                                 id={value.id}
-                                 name={value.name}
-                                 detail={value.detail}
-                                 tags={value.tags}
-                                 created_at={value.created_at}
-                                 updated_at={value.updated_at}></TodoList>
-            })}
         </div>
     );
 }
